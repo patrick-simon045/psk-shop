@@ -1845,6 +1845,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _default_variables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../default-variables */ "./resources/js/default-variables.js");
 //
 //
 //
@@ -1855,11 +1856,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     name: {
       type: String,
-      "default": "Unknown",
+      "default": _default_variables__WEBPACK_IMPORTED_MODULE_0__.default_variables.name,
       required: true
     }
   },
@@ -1870,7 +1875,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     console.log("Component mounted.");
-    console.log("This is new begining of an era");
+    console.log("This is new begining of a new era of programming");
   }
 });
 
@@ -1954,6 +1959,23 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/default-variables.js":
+/*!*******************************************!*\
+  !*** ./resources/js/default-variables.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default_variables": () => (/* binding */ default_variables)
+/* harmony export */ });
+var default_variables = {
+  name_default: "unknown"
+};
 
 /***/ }),
 
@@ -6415,7 +6437,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".car[data-v-299e239e] {\n  font: 100% Helvetica, sans-serif;\n  font-size: 20px;\n  padding: 30px 20px;\n  margin-top: 20px;\n  border-radius: 10px;\n  color: #333;\n  background: #fff;\n  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".car[data-v-299e239e] {\n  font: 100% Helvetica, sans-serif;\n  font-size: 15px;\n  padding: 30px 20px;\n  margin-top: 20px;\n  border-radius: 10px;\n  color: #333;\n  background: #fff;\n  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n}\n.span[data-v-299e239e] {\n  color: #FF0000;\n  font-weight: bold;\n  font-size: 20px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37856,7 +37878,9 @@ var render = function() {
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-8" }, [
         _c("div", { staticClass: "car" }, [
-          _vm._v(_vm._s(_vm.username) + " This is a Vue js Component!!!")
+          _vm._v("\n        Hello "),
+          _c("span", { staticClass: "span" }, [_vm._v(_vm._s(_vm.username))]),
+          _vm._v(", this is a Vue js Component!!!\n      ")
         ])
       ])
     ])

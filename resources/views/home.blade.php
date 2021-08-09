@@ -19,6 +19,6 @@
             </div>
         </div>
     </div>
-    <example-component :name="Patrick"></example-component>
+    <example-component name={{ Auth::user()->name }}></example-component>
 </div>
 @endsection
