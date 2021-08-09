@@ -21,9 +21,13 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+        $width = 2000;
+        $height = 3000;
         return [
             "Name" => $this->faker->name(),
-            "Description" => $this->faker->sentence(20),
+            'Image' => $this->faker->imageUrl($width, $height, 'cats'),
+            'Short description' => $this->faker->sentence,
+            'Description' => $this->faker->paragraph,
             "Price" => $this->faker->numberBetween(1000, 5000),
         ];
     }
