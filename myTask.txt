@@ -1,0 +1,11 @@
+?? task at hand
+
+Develop a web application for viewing products and then having the contacts to the supplier of the prodct.
+
+=====> How to get the income ---> income is obtained through paying for the product to be viewed on the website.
+
+database name = e-comm-project
+design should be from dribbble to save time and effort
+hosting = heroku
+
+authentication should be present
